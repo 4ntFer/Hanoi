@@ -1,3 +1,5 @@
 # Torres de Hanoi
 
-## Parte de um projeto de ensino de pensamento computacional na WEB
+## Ensino de pensamento computacional na WEB
+
+*Esse é um jogo feito com HTML, CSS e JavaScript que irá compor uma plataforma de ensino computacional
