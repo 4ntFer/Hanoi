@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<style>
+    .body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hanoi{
+        width: 1280px;
+        height: 720px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pinoGui{
+        border: 1px solid black;
+    }
+
+</style>
+
+<body class="body">
+
+    <div class = "hanoi">
+        
+        <canvas class="pinoGUI" id="pino1" width="200" height="200">
+        </canvas>
+
+        <canvas class="pinoGUI" id="pino2" width="200" height="200">
+        </canvas>
+
+        <canvas class="pinoGUI" id="pino3" width="200" height="200">
+        </canvas>
+
+    </div> 
+
+
+    <script src='./Pilha.js' type='module'></script>
+    <script src='./Pino.js' type='module'></script>
+    <script src='./Tabuleiro.js' type='module'></script>
+    <script src='./Main.js' type='module'></script>
+
+    <script type="module">
+        import {Main} from './Main.js';
+
+        const main = new Main();
+        main.start();
+
+    </script>
+
+</body>
+</html>>
